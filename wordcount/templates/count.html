@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>World Count</title>
+  </head>
+  <body>
+    <a href="{% url 'home' %}">back to homepage</a>
+    <br>
+    <h1>Word Count App</h1>
+  <h3>Text Name</h3>{{ fulltext }}
+  <br>
+  <p>Total Words Are :</p>{{ words }}
+  <br><br>
+  {% for word.value in worddictionary %}
+  {{ word }} = {{ value }}
+  <br>
+  {% endfor %}
+
+  </body>
+</html>
